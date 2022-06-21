@@ -9,19 +9,20 @@
 
 ## Motivation : 
 
-La **Bistromatic** est un projet de début d'année à Epitech, il s'effectue en groupe de trois. Il est le dernier projet d'une série de trois projet dans le but de créer une calculatrice. Il suit le InfinAdd et le Evalexpr.
+Le **Need4Stek** est un projet milieu/fin d'année à Epitech et est a effectué en duo. Il conciste a créer un algorithme de voiture afin que celle-ci parcours des pistes en le moins de temps possible, et en se cognant le moins possible au murs.
 
 ---
 
 ## Description :
 
-Le but de ce projet est donc de créer une calculatrice qui interprête les nombres dans des chaînes de caractères afin de ne pas être limité par le maximum integer et donc de pouvoir faire des calculs infini. De plus il peut-être utilisé avec n'importe quel base, et les opérateurs peuvent être modifié. 
+Pour ce projet, nous utilisons Coppeliasim, un simulateur de piste sur lesquelles une voiture peut rouler. De plus, nous disposons d'une API qui va nous permettre de faire différente actions avec notre voiture, comme par exemple, conttrôler les roues, avoir accès aux informations donné par le Lidar dont dispose la voiture, ou encore d'autre actions plus simple comme lancer la simulation ou l'arrêter. De plus, nous disposons aussi d'un script qui va pouvoir mettre en relation notre code et le simulateur coppeliasim. Une fois notre code exécuté, celui-ci va enfaite simplement écrire du texte dans le terminal et le script va envoyer toute ses informations au simulateur.
 
 ---
 
 ## Fonctions Autorisées : 
 
-- read, write, malloc, free, exit
+- Toute la libC
+- Toute la librairie Math
 
 ---
 
@@ -29,21 +30,16 @@ Le but de ce projet est donc de créer une calculatrice qui interprête les nomb
 
 Ouvrez un terminal et dirigez vous ou vous souhaitez que le projet soit installé, puis exécutez les commandes suivantes : 
 ```bash
-$ git clone git@github.com:DoctypeHonoo/bistromatic.git
-$ cd bistromatic
+$ git clone git@github.com:DoctypeHonoo/n4s.git
+$ cd n4s
 $ make
 ```
-Une fois compilé, le binaire se trouvera à la racine du projet, et il vous faudra l'utiliser comme ceci :
 ```bash
-$ echo Calcul | ./calc Base Operateurs Longueur
+$ ./pipes
 ```
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/91092610/174844033-bfef5640-1915-44c3-976e-845a6a91514d.png"/>
-</p>
+
 ---
 
 ## Comment l'utiliser ? : 
 
-La commande echo doit être utilisé en même temps que le binaire du programme séparé par un pipe "|". Le echo en premier avec comme arguments le calcul demandé, puis pour les arguments lors de l'exécution du binaire, l'utilisateur devra fournir la base (ex: "0123456789"), ainsi que les opérateurs (ex: "()+-\*/%") et pour finir la longueur du calcul donner avec le echo.
-![image](https://user-images.githubusercontent.com/91092610/174857243-9dcd8ab3-cf45-4ea0-be7c-46704f25741c.png)
-![image](https://user-images.githubusercontent.com/91092610/174857570-c836307c-550d-4c50-9b6e-85e4fe0ce0df.png)
+Avant de lancer le binaire, il vous faudra en premier lieu lancer coppeliasim, puis lancer le script qui va lui même lancer le binaire du code ainsi que l'api et va faire la connexion avec coppeliasim et votre voiture commencera alors à bouger.
