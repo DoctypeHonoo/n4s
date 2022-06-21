@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/91092610/174865103-1d2f9bb6-3cb9-44e9-a78f-063606172523.png"/>
 </p>
 <h1 align="center">
-   Need4Steak
+   Need4Stek
 </h1>
 
 ---
